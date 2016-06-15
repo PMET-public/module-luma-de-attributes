@@ -1,0 +1,13 @@
+{
+    "name": "magentoese/module-luma-de-attributes",
+    "type": "magento2-module",
+    "require": {
+        "magento/framework": "*"
+    },
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "MagentoEse\\MagentoEse_LumaDEAttributes\\": ""
+        }
+    }
+}
