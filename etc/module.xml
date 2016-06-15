@@ -2,7 +2,6 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
     <module name="MagentoEse_LumaDEAttributes" setup_version="0.0.1">
         <sequence>
-            <module name="MagentoEse_InStorePickup"/>
             <module name="Magento_SampleData"/>
             <module name="Magento_CatalogSampleData"/>
             <module name="Magento_BundleSampleData"/>
