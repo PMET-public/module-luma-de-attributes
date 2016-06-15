@@ -7,7 +7,7 @@
     "autoload": {
         "files": [ "registration.php" ],
         "psr-4": {
-            "MagentoEse\\MagentoEse_LumaDEAttributes\\": ""
+            "MagentoEse\\LumaDEAttributes\\": ""
         }
     }
 }
