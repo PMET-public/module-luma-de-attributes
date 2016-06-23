@@ -5,40 +5,40 @@ Brown,Braun
 Gray,Grau
 Green,Grün
 Lavender,Lavendel
-Multi,***
+Multi,Mehrfarbig
 Orange,Orange
 Purple,Violett
 Red,Rot
 White,Weiß
 Yellow,Gelb
 ####,##ACTIVITY##
-Hike,***
-Outdoor,***
+Hike,Wanderung
+Outdoor,Draussen
 Running,Laufsport
-Warmup,***
+Warmup,Warm Laufen
 Yoga,Yoga
-Recreation,***
-Lounge,***
-Gym,***
-Climbing,***
-Crosstraining,***
-Post-workout,***
-Cycling,***
-Athletic,***
-Sports,***
-Hiking,***
-Overnight,***
-School,***
-Trail,***
-Travel,***
-Urban,***
+Recreation,Erholung
+Lounge,Entspannen
+Gym,Turnhalle
+Climbing,Felsklettern
+Crosstraining,Cross-Training
+Post-workout,nach dem Training
+Cycling,Radfahren
+Athletic,Sportlich
+Sports,Sportarten
+Hiking,Wandern
+Overnight,Über Nacht
+School,Schule
+Trail,Weg
+Travel,Reise
+Urban,Städtisch
 ####.##CATEGORY GEAR##
-Cardio,***
-Electronic,***
-Exercise,***
-Fashion,***
-Hydration,***
-Timepiece,***
+Cardio,Cardio
+Electronic,Elektronisch
+Exercise,Übung
+Fashion,Mode
+Hydration,Trink
+Timepiece,Uhr
 ####,##CLIMATE##
 All-Weather,Für jedes Wetter
 Cold,Kühl
@@ -46,154 +46,154 @@ Cool,Kalt
 Indoor,Indoor
 Mild,Mild
 Rainy,Regnerisch
-Spring,***
+Spring,Lenz
 Warm,Warm
 Windy,Windig
-Wintry,***
+Wintry,Winterlich
 Hot,Heiß
 ####,##COLLAR##
-N/A,***
-? zip,***
-Boat Neck,***
-Crew,***
-Full zip,***
-V-neck,***
-Ballet,***
-Scoop,***
-High Collar,***
-Stand Collar,***
-Roll Neck,***
-Square Neck,***
+N/A,Unzutreffend
+? zip,1/4 Zip
+Boat Neck,Boot-Halsausschnitt
+Crew,Rundhalsausschnitt
+Full zip,Full Zip
+V-neck,V-Halsausschnitt
+Ballet,Ballett
+Scoop,Scoop-Halsausschnitt
+High Collar,Hoher Kragen
+Stand Collar,Stehkragen
+Roll Neck,Rollkragen
+Square Neck,Quadrat-Halsausschnitt
 ####,##FEATURES BAGS##
-Audio Pocket,***
-Wheeled,***
-Hydration Pocket,***
-Audio Pocket,***
-Flapover,***
-Waterproof,***
-Lightweight,***
-TSA Approved,***
-Reflective,***
-Laptop Sleeve,***
-Lockable,***
+Audio Pocket,Audiotasche
+Wheeled,Radfahr
+Hydration Pocket,Trink Tasche
+Audio Pocket,Audiotasche
+Flapover,Flapover
+Waterproof,Wasserdicht
+Lightweight,Leicht
+TSA Approved,TSA-Genehmigt
+Reflective,Spiegeln
+Laptop Sleeve,Laptop-Hülle
+Lockable,Verschließbar
 ###,##FORMAT##
-Download,***
-DVD,***
+Download,Herunterladen
+DVD,DVD
 ####,##GENDER##
 Men,Herren
 Women,Damen
-Boys,***
-Girls,***
-Unisex,***
+Boys,Jungen
+Girls,Mädchen
+Unisex,Unisex
 ####,##MATERIAL##
-Burlap,***
-Cocona&reg; performance fabric,***
-Canvas,***
+Burlap,Sackleinen
+Cocona&reg; performance fabric,Cocona
+Canvas,Leinwand
 Cotton,Baumwolle
-Fleece,Fleece
-Faux Leather,***
-Hemp,***
-Jersey,***
+Fleece,Vlies
+Faux Leather,Kunstleder
+Hemp,Hanf
+Jersey,Jersey
 Leather,Leder
 LumaTech&trade;,LumaTech&trade;
 Mesh,Netzstoff
 Lycra&reg;,Lycra&reg;
 Nylon,Nylon
-Microfiber,Microfiber
+Microfiber,Mikrofaser
 Polyester,Polyester
-Rayon,Rayon
-Spandex,Elastan
+Rayon,Kunstseide
+Spandex,Elasthan
 HeatTec&reg;,HeatTec&reg;
-Ripstop,***
+Ripstop,Ripstop
 EverCool&trade;,EverCool&trade;
-Suede,***
-Foam,***
-Organic Cotton,Organische Baumwolle
-Metal,***
-TENCEL,***
-CoolTech&trade;,
-Plastic,***
-Khaki,***
-Rubber,***
+Suede,Wildleder
+Foam,Schaumstoff
+Organic Cotton,Bio-Baumwolle
+Metal,Metall
+Tencel,Tencel
+CoolTech&trade;,CoolTech&trade;
+Plastic,Kunststoff
+Khaki,Khaki
+Rubber,Gummi
 Linen,Leinen
-Synthetic,***
-Stainless Steel,***
-Wool,***
-Silicone,***
-Terry,***
+Synthetic,Synthetik
+Stainless Steel,Edelstahl
+Wool,Wolle
+Silicone,Silikon
+Terry,Terry
 ####,##PATTERN##
-Color-Blocked,***
-Checked,***
-Graphic Print,***
-Solid,***
-Solid-Highlight,***
-Striped,***
-Camo,***
-Geometric,***
+Color-Blocked,Farbblock
+Checked,Kariert
+Graphic Print,Grafikdruck
+Solid,Volltondruck
+Solid-Highlight,Solid-Highlight
+Striped,Gestreift
+Camo,Tarnung
+Geometric,Geometrisch
 ####,##PURPOSE##
-Products,***
-Video Streaming,***
-All-Purpose,***
+Products,Produkte
+Video Streaming,Video streamen
+All-Purpose,Allzweck
 ####,##SLEEVE##
-Sleeve,***
-Long-Sleeve,***
-Short-Sleeve,***
-Sleeveless,***
+Sleeve,Ärmel
+Long-Sleeve,Lange Ärmel
+Short-Sleeve,Kurze Ärmel
+Sleeveless,Ärmellos
 Tank,Tanktop
-Strap,***
+Strap,Gurt
 ####,##STRAP BAGS##
-Adjustable,***
-Cross Body,***
-Detachable,***
-Double,***
-Padded,***
-Shoulder,***
-Single,***
-Telescoping,***
+Adjustable,Einstellbar
+Cross Body,Quer durch Körper
+Detachable,Abnehmbar
+Double,Doppelt
+Padded,Wattiert
+Shoulder,Schulter
+Single,Single
+Telescoping,Teleskop
 ####,##STYLE BAGS##
 Backpack,Rucksack
-Luggage,***
-Duffel,***
-Messenger,***
-Laptop,***
-Exercise,***
-Tote,***
+Luggage,Gepäck
+Duffel,Seesack
+Messenger,Umhängetasche
+Laptop,Laptop
+Exercise,Übung
+Tote,Tragen
 ####,##STYLE BOTTOM##
-Base Layer,***
-Basic,***
-Capri,***
-Compression,***
-Leggings,***
-Parachute,***
-Skort,***
-Snug,***
-Sweatpants,***
-Tights,***
-Track Pants,***
-Workout Pants,***
+Base Layer,Grundschicht
+Basic,Basic
+Capri,Capri
+Compression,Kompression
+Leggings,Gamaschen
+Parachute,Fallschirm
+Skort,Skort
+Snug,Straff
+Sweatpants,Jogginghose
+Tights,Laufhosen
+Track Pants,Spurhosen
+Workout Pants,Trainingshosen
 ####,##STYLE GENERAL##
-Insulated,***
+Insulated,Abschirmen
 Jacket,Jacken
-Vest,***
-Lightweight,
-Hooded,***
-Heavy Duty,***
-Rain Coat,***
-Hard Shell,***
-Soft Shell,***
-Windbreaker,***
-&frac12; zip,***
-&frac14; zip,***
-Full Zip,***
-Reversible,***
+Vest,Weste
+Lightweight,Leicht
+Hooded,mit Kapuze
+Heavy Duty,Schwerlast
+Rain Coat,Regenjacke
+Hard Shell,Harte Schale
+Soft Shell,Weich Schale
+Windbreaker,Windjacke
+&frac12; zip,&frac12; zip
+&frac14; zip,&frac14; zip
+Full Zip,Full Zip
+Reversible,Reversibel
 Bra,BH
 Hoodie,Kapuzenshirt
 Sweatshirt,Sweatshirt
-Polo,***
+Polo,Polo
 Tank,Tanktop
 Tee,T-Shirt
-Pullover,***
-Cardigan,***
-Henley,***
-Tunic,***
-Camisole,***
+Pullover,Pullover
+Cardigan,Strickjacke
+Henley,Henley
+Tunic,Tunika
+Camisole,Leibchen
