@@ -5,9 +5,10 @@ namespace MagentoEse\LumaDEAttributes\Setup;
 use Magento\Framework\Setup\InstallDataInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
+use Symfony\Component\Config\Definition\Exception\Exception;
 
 
-    /**
+/**
  * @codeCoverageIgnore
  */
 class InstallData implements InstallDataInterface
@@ -45,33 +46,42 @@ class InstallData implements InstallDataInterface
         $_attributeValues= $this->csvReader->getData($_fileName);
 
         //loop though attributes to translate
-        foreach ($this->config['attributesToTranslate'] as $_attribcode) {
-            //get default label for that code
-            $_defaultLabel = $this->attribute->loadByCode(\Magento\Catalog\Model\Product::ENTITY, $_attribcode)->getStoreLabel(0);
-            //find translation
-            foreach ($_attributeLabels as $_labelToTranslate) {
-                if ($_labelToTranslate[0] == $_defaultLabel) {
-                    //save label - default value also needs to be set as part of the array
-                    $attribute = $this->attribute->loadByCode(\Magento\Catalog\Model\Product::ENTITY, $_attribcode);
-                    $attribute->setData('frontend_label', [0 => $_defaultLabel, $_viewId => $_labelToTranslate[1]])->save();
-                    continue;
-                }
-            }
-            //set values for attribute
 
-            $attributeOptions = $this->productAttributeRepository->get($_attribcode)->getOptions();
-            foreach ($attributeOptions as $attributeOption) {
-                $_optionValue = $attributeOption->getValue();
-                $_optionLabel = $attributeOption->getLabel();
-                foreach ($_attributeValues as $_attributeValue) {
-                    if ($_optionLabel == $_attributeValue[0]) {
-                        $attribute->setData('option', array('value' => array($_optionValue => [0 => $_optionLabel, $_viewId => $_attributeValue[1]])))->save();
+            foreach ($this->config['attributesToTranslate'] as $_attribcode) {
+                //get default label for that code
+
+                    $_defaultLabel = $this->attribute->loadByCode(\Magento\Catalog\Model\Product::ENTITY, $_attribcode)->getStoreLabel(0);
+
+
+                //find translation
+                foreach ($_attributeLabels as $_labelToTranslate) {
+                    if ($_labelToTranslate[0] == $_defaultLabel) {
+                        //save label - default value also needs to be set as part of the array
+                        $attribute = $this->attribute->loadByCode(\Magento\Catalog\Model\Product::ENTITY, $_attribcode);
+                        $attribute->setData('frontend_label', [0 => $_defaultLabel, $_viewId => $_labelToTranslate[1]])->save();
                         continue;
                     }
                 }
+                //set values for attribute
+                try {
+                    $attributeOptions = $this->productAttributeRepository->get($_attribcode)->getOptions();
+                }catch(\Magento\Framework\Exception\NoSuchEntityException $e){
+                    //Ignore if attribute is not found
+                    continue;
+                }
+                foreach ($attributeOptions as $attributeOption) {
+                    $_optionValue = $attributeOption->getValue();
+                    $_optionLabel = $attributeOption->getLabel();
+                    foreach ($_attributeValues as $_attributeValue) {
+                        if ($_optionLabel == $_attributeValue[0]) {
+                            $attribute->setData('option', array('value' => array($_optionValue => [0 => $_optionLabel, $_viewId => $_attributeValue[1]])))->save();
+                            continue;
+                        }
+                    }
+                }
+
             }
 
-        }
     }
 }
 
