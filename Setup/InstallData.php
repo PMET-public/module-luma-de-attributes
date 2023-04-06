@@ -2,9 +2,14 @@
 
 namespace MagentoEse\LumaDEAttributes\Setup;
 
+use Magento\Catalog\Model\Product\Attribute\Repository;
+use Magento\Eav\Model\Entity\Attribute;
+use Magento\Framework\File\Csv;
 use Magento\Framework\Setup\InstallDataInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
+use Magento\Framework\Setup\SampleData\FixtureManager;
+use Magento\Store\Model\Store;
 use Symfony\Component\Config\Definition\Exception\Exception;
 
 
@@ -14,11 +19,47 @@ use Symfony\Component\Config\Definition\Exception\Exception;
 class InstallData implements InstallDataInterface
 {
 
+   /**
+    * 
+    * @var \Magento\Framework\Setup\SampleData\Context
+    */
     protected $sampleDataContext;
+
+    /**
+     * 
+     * @var Store
+     */
     protected $storeView;
+
+    /**
+     * 
+     * @var Attribute
+     */
     protected $attribute;
+
+    /**
+     * 
+     * @var Repository
+     */
     protected $productAttributeRepository;
 
+    /**
+     * 
+     * @var array
+     */
+    protected $config;
+
+    /**
+     * 
+     * @var FixtureManager
+     */
+    protected $fixtureManager;
+
+    /**
+     * 
+     * @var Csv
+     */
+    protected $csvReader;
 
     public function __construct(\Magento\Framework\Setup\SampleData\Context $sampleDataContext,
                                 \Magento\Store\Model\Store $storeView,
